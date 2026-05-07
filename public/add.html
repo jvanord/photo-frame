@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Photo</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/add.js"></script>
+  </head>
+  <body class="add-page">
+    <main class="add-panel">
+      <a class="back-link" href="/" aria-label="Back to viewer">‹</a>
+      <form class="add-form" action="/api/photos" method="post">
+        <label for="url">Photo URL</label>
+        <input id="url" name="url" type="url" inputmode="url" autocomplete="off" required autofocus>
+        <p id="error" class="error" hidden></p>
+        <button id="clipboard-add" type="button" hidden>Add from Clipboard</button>
+        <button type="submit">Add</button>
+      </form>
+    </main>
+  </body>
+</html>

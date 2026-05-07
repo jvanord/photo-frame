@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Photo Frame</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="viewer-page">
+    <main id="viewer" class="viewer" aria-live="polite">
+      <img id="photo" class="photo" alt="">
+      <div id="empty" class="empty" hidden>No photos</div>
+    </main>
+    <a class="add-button" href="/add" aria-label="Add photo">+</a>
+  </body>
+</html>

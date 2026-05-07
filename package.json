@@ -1,0 +1,12 @@
+{
+  "name": "photo-frame",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "certs": "node scripts/generate-local-certs.mjs",
+    "start": "node server.mjs",
+    "start:https": "PHOTO_FRAME_HTTPS=1 PORT=${PORT:-8443} node server.mjs",
+    "test": "node --test"
+  }
+}
